@@ -286,7 +286,7 @@ margin :0;
   
 
 @media screen and (max-width: 768px) {
-    /* تطبيق العرض المرن على الصناديق */
+    /* 1. ضبط عرض جميع الصناديق لتناسب الشاشة */
     .container, 
     .Research-container, 
     .Education-container, 
@@ -300,12 +300,28 @@ margin :0;
         box-sizing: border-box !important;
     }
 
-    /* جعل الجدول يتجاوب بشكل بسيط ومطابق لما ورد في السلايدات */
+    /* 2. حل مشكلة مربع النص (textarea) لئلا يخرج عن الصندوق */
+    .COcontainer input[type="text"], 
+    .COcontainer textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 3. حل مشكلة الجدول وإجباره على البقاء داخل الصندوق */
     .Education-container table {
         width: 100% !important;
+        table-layout: fixed !important;
+    }
+
+    .Education-container th, 
+    .Education-container td {
+        padding: 4px !important;
+        word-break: break-word !important;
         word-wrap: break-word !important;
     }
 
+    /* 4. منع خروج جميع النصوص العامة */
     p, span, h1, h2, h3, h4, li {
         max-width: 100% !important;
         word-wrap: break-word !important;
