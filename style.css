@@ -1,0 +1,288 @@
+.headerbox{
+width:auto;
+background-color: #6f4c9d;
+border-radius: 30px;
+border-top: 3px solid #1c1c1c;
+border-bottom: 3px solid #15010e;
+padding: 15px;
+margin-bottom:50px;
+text-align:center;
+box-shadow : 0px 0px 30px #f8001df1;
+}
+.headerbox .title{
+    color: white;
+    font-size: 40px;
+    margin:1.5;
+}
+.headerbox .htitle{
+    color: red;
+    font-size:25px;
+    margin:1.5;
+}
+ .navbox ul {
+list-style-type: none;
+padding: 0;
+margin-top: 10px;
+    
+}
+.navbox li {
+    display:inline-block;
+    margin :5px; 
+}
+.navink{
+     display: inline-block;
+    text-decoration: none;
+   color:white;
+   background-color:#1c1c1c;
+   padding: 10px 15px;
+   border:2px solid red;
+   border-radius: 15px;
+   font-size: 20px ;
+   font-weight: bold;
+   max-width: auto; 
+    text-align: center;
+}
+.navink:hover{
+    background-color:red;
+        color:rgb(6, 0, 193);
+}
+
+
+/* ---------------------+++++++++++++++++++++++++++++++ */
+/* هون خصائص لب اوتو مي نبذة عني Auto me */
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+   border: 3px solid  #1e0dd6b6;
+   background-color:rgb(0, 255, 255);
+   border-radius:40px;
+   padding: 20px;
+text-align: left;
+padding-bottom:12px;
+box-shadow : 0px 0px 10px #ff0000;
+
+}
+
+  .container .Nnams{
+text-align: center;
+    color:#10c793b5;
+font-size: 35px;
+
+   }
+
+  .container .Mname{
+    color: rgb(186, 12, 17);
+    font-size: 20px;
+   }
+
+  .container .Wlsit{
+    font-size: 15px;
+    color:#0209dbb6
+   }
+
+ .container img{
+    width: 170px;
+    height: 170px;
+        border-radius: 50%;
+        border: 3px solid #0011ffb6;
+    }
+    /* ---------------------------------------------------------------------------- */
+/* هون خصائص ال reaserch */
+    .Research-container {
+        width: 800px;
+        margin-left: auto;  
+        margin-right: auto;
+        border: 3px solid  #0005a1b6;
+        background-color:rgb(0, 253, 253);
+        border-radius:40px;
+        padding: 20px;  
+        box-shadow : 0px 0px 10px #ff0000;
+
+
+    }
+    .Research-container .Nnames{
+        color :#10c793b5;
+        font-size:35px;
+        text-align:center;
+    }
+    .Research-container .Wlist{
+        color:rgb(68, 7, 237);
+    }
+    .Research-container .Cna{
+        color :rgb(186, 12, 17);
+        font-size:25px;
+    }
+    .Research-container .Mna{
+        color :seagreen;
+        font-size:20px;
+    }
+    .Research-container .Wlis{
+        color :#0209dbb6;
+        font-size:15px;
+    }
+    /* ------------------------------------------------------------ */
+    /*  هسا هون بدنا نبلش بخصائص ال education  */
+    .Education-container {
+        width: 800px;
+        margin-left: auto;  
+        margin-right: auto;
+        border: 3px solid  #000aceb6;
+        background-color:rgb(0, 255, 255);
+        border-radius:40px;
+        padding: 20px;  box-shadow : 0px 0px 10px #ff0000;
+
+    }
+    .Education-container .Nnames{
+        color:aquamarine;
+        font-size:35px;
+        text-align:center;
+    }
+    .Education-container .row1t{
+        color :rgb(255, 0, 0);
+        font-size:20px;
+        background-color:rgb(63, 5, 128);
+    }
+    .Education-container .row2t{
+        color :rgb(0, 255, 17);
+        font-size:20px;
+        background-color:rgb(109, 108, 111);
+    }
+    .Education-container .Nmun{
+        color:red;
+        font-size : 20px;
+    }
+    .Education-container .Wlist{
+        color :#0209dbb6;
+        font-size:15px;
+    }
+    /* --------------------------------------------------------------- */
+    /* خصائص ال Projects & Technical Experience */
+    .P-container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #ff0000e5;
+        background-color: rgb(0, 255, 255);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow : 0px 0px 10px #ff0000;
+
+    }
+    .P-container .Nnames {
+        color: #10c793b5;
+        font-size: 35px;
+        text-align: center;
+    }
+    .P-container .Mname {
+        color: rgb(186, 12, 17);
+        font-size: 28px;
+    }
+    .P-container .Mlist {
+        color: #0209dbb6;
+        font-size: 15px;
+    }
+/* ---------------------------------------------------------------- */
+/* خصائص ال technical interests */
+    .Te-container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #ff0000b6;
+        background-color: rgb(0, 255, 255);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow : 0px 0px 10px #ff0000;
+
+    }
+    .Te-container h2 {
+        color: #10c793b5;
+        font-size: 35px;
+        text-align: center;
+    }
+    .Te-container ul {
+        color: #db0202b6;
+        font-size: 25px;
+    }
+    /* ------------------------------------------------------------------------ */
+    /* تنسيق حقل العنوان والرسالة */
+    .COcontainer {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #000000b6;
+        background-color: rgb(0, 255, 255);
+        border-radius: 40px;
+        padding: 20px;
+        box-shadow : 0px 0px 10px #ff0000;
+
+    }
+    .COcontainer .Nnames{
+        color: #10c793b5;
+        font-size: 35px;
+        text-align: center;
+    }
+    .COcontainer input[type="text"]{
+        width: 200px;
+        padding: 20px;
+        margin-bottom: 5px;
+        border: 5px solid #2e1289;
+        border-radius: 15px;
+    }
+    .COcontainer textarea{
+        width: 600px;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 5px solid #151997;
+        border-radius: 15px;
+    }
+    .COcontainer input[type="submit"] {
+        background-color: #00ff08;
+        color: rgb(180, 3, 36);
+        padding: 15px 25px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .COcontainer input[type="reset"] {
+        background-color: #ff0000;
+        color: rgb(6, 0, 193);
+        padding: 15px 25px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    /* ------------------------------------ ---------------------------*/
+    /* الاسم مع رقمي الجامعة  */
+    .Namenumbers {
+        width: 99%;
+        height: auto;
+        background-color: #70b9edb6;
+     border-radius: 20px;
+    border-top : 3px solid #ff0000;
+border-bottom : 3px solid #ff0000;
+padding: 10px;
+margin-top: 40px;
+box-shadow : 0px 0px 10px #ff0000;
+    }
+    .Namenumbe .Namenumbers{
+
+    text-align: center;
+    color:#ff0000;
+    font-size: 27px;
+    font-weight: bold;
+
+margin :0;
+    }
+  
+
+@media screen and (max-width: 768px) {
+    
+    /* جعل جميع الصناديق تأخذ عرض الشاشة مع ترك هامش بسيط جداً من الجانبين */
+    .box, .COcontainer, .headerbox {
+        width: 92% !important;      /*  عشان تناسب شاشات يخلي في شوية فراغ*/
+        margin-left: auto !important;   /* تثبيت صندوق من شمال */
+        margin-right: auto !important;   /* تثبيت صندوق من اليمين */
+        box-sizing: border-box;  /* عشان يحسب الاطار والمربعات */
+    }
+}
