@@ -286,7 +286,7 @@ margin :0;
   
 
 @media screen and (max-width: 768px) {
-    /* 1. تطبيق العرض المرن على جميع الصناديق بدون استثناء أي قسم */
+    /* تطبيق العرض المرن على الصناديق */
     .container, 
     .Research-container, 
     .Education-container, 
@@ -294,51 +294,20 @@ margin :0;
     .Te-container, 
     .COcontainer, 
     .headerbox {
-        width: 92% !important;
-        max-width: 92% !important;
+        width: 90% !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding: 15px !important;
         box-sizing: border-box !important;
     }
 
-    /* 2. تجاوب عناصر النموذج (Input & Textarea) كي لا تخرج عن الصندوق */
-    .COcontainer input[type="text"], 
-    .COcontainer textarea {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    /* 3. ضمان عدم خروج النصوص والصور والجداول عن الحدود وتغليف الكلام تلقائياً */
-    p, span, h1, h2, h3, h4, li, a {
-        max-width: 100% !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-    }
-
-    /* 4. جعل أزرار التنقل تتوزع بشكل مريح على الموبايل */
-    .navbox li {
-        display: inline-block;
-        margin: 3px;
-    }
-    .navink {
-        font-size: 14px !important;
-        padding: 6px 10px !important;
-    }
-
-    /* 5. تجاوب الجدول وإجباره على التلاؤم داخل صندوق الـ Education */
+    /* جعل الجدول يتجاوب بشكل بسيط ومطابق لما ورد في السلايدات */
     .Education-container table {
         width: 100% !important;
-        max-width: 100% !important;
-        table-layout: fixed !important;
         word-wrap: break-word !important;
     }
 
-    .Education-container th, 
-    .Education-container td {
-        padding: 5px !important;
-        font-size: 11px !important;
-        word-break: break-word !important;
+    p, span, h1, h2, h3, h4, li {
+        max-width: 100% !important;
+        word-wrap: break-word !important;
     }
 }
