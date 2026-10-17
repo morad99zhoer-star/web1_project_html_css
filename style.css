@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body {   
+    color: #ffffff;
    overflow-x: hidden; /* عشان ميصرش يمرر من اليمين وشمال وتكون صفحة مستويه سحبة وحده*/
 background-color: #000000;   /* page to color black*/
 }
@@ -156,9 +157,7 @@ font-size: 35px;
         padding: 20px;  box-shadow : 0px 0px 10px #48ff00;
 
     }
-    .Education-container table tr {
-    transition: background-color 0.2s ease;
-}
+
 
 .Education-container table tr:hover {
     background-color: rgba(246, 245, 248, 0.15); /* لون إضاءة خفيف للصف */
@@ -236,7 +235,7 @@ font-size: 35px;
         font-size: 25px;
     }
     /* ------------------------------------------------------------------------ */
-    /* تنسيق حقل العنوان والرسالة */
+/* شغل على ال contact me */
     .COcontainer {
         width: 800px;
         margin-left: auto;
@@ -303,6 +302,7 @@ font-size: 35px;
     /* ------------------------------------ ---------------------------*/
     /* الاسم مع رقمي الجامعة  */
     .Namenumbers {
+        text-align: center;
         width: 99%;
         height: auto;
         background-color: #70b9edb6;
@@ -311,18 +311,31 @@ font-size: 35px;
 border-bottom : 3px solid #ff0000;
 padding: 10px;
 margin-top: 40px;
-box-shadow : 0px 0px 10px #ff0000;
+box-shadow : 0px 0px 10px #33ff00;
     }
     .Namenumbe .Namenumbers{
 
     text-align: center;
-    color:#ff0000;
+    color:#00c8ff;
     font-size: 27px;
     font-weight: bold;
-
 margin :0;
-    }
-  
+ }
+    /* تنسيق أسماء الدكاترة في الـ Footer */
+.Namenumbe .instructors {
+    text-align: center;
+    display:inline-block ;
+    border: 2px solid #e50c0c;
+    border-radius: 15px;
+    color: #00ff08 ; 
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 12px 25px;
+    box-shadow: 0px 0px 10px #00ff08;
+}
+
+  /* --------------------------------- */
+
 
 @media screen and (max-width: 768px) {
     /* ضبط عرض وحجم جميع الصناديق الرئيسية على الموبايل */
