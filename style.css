@@ -1,32 +1,40 @@
 * {
     box-sizing: border-box;
 }
+body {   
+   overflow-x: hidden; /* عشان ميصرش يمرر من اليمين وشمال وتكون صفحة مستويه سحبة وحده*/
+background-color: #000000;   /* page to color black*/
+}
 
-body {
-    overflow-x: hidden; /* يمنع ظهور شريط التمرير الأفقي تماماً */
+html {
+    scroll-behavior: smooth; /* حركة تنقل ناعمة وانسيابية بين الأجزاء 
+    يعني لما اكبس ع اي زر عشان ينقلني بحركة سلسة
+    */
 }
 
 
 .headerbox{
 width:auto;
-background-color: #6f4c9d;
+background-color: #0bd6d6;
 border-radius: 30px;
-border-top: 3px solid #1c1c1c;
-border-bottom: 3px solid #15010e;
+border-top: 3px solid #030303;
+border-bottom: 3px solid #000000;
+border-left: 3px solid #000000;
+border-right: 3px solid #000000;
 padding: 15px;
 margin-bottom:50px;
 text-align:center;
-box-shadow : 0px 0px 30px #f8001df1;
+box-shadow : 0px 0px 30px #ff003c;
 }
-.headerbox .title{
-    color: white;
+.headerbox .MyName {
+    color: rgb(153, 15, 15);
     font-size: 40px;
-    margin:1.5;
+    margin: 15px 0;
 }
-.headerbox .htitle{
+.headerbox .Student{
     color: red;
     font-size:25px;
-    margin:1.5;
+    margin:1.5px;
 }
  .navbox ul {
 list-style-type: none;
@@ -39,6 +47,9 @@ margin-top: 10px;
     margin :5px; 
 }
 .navink{
+    
+    transition: all 0.3s ease; /* عشان الحركة*/
+
      display: inline-block;
     text-decoration: none;
    color:white;
@@ -54,7 +65,9 @@ margin-top: 10px;
 .navink:hover{
     background-color:red;
         color:rgb(6, 0, 193);
+    transform: translateY(-6px); /* ارتفاع زر لل اعلى لما نئشر عليه بل ماوس*/
 }
+
 
 
 /* ---------------------+++++++++++++++++++++++++++++++ */
@@ -63,60 +76,61 @@ margin-top: 10px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-   border: 3px solid  #1e0dd6b6;
+   border: 3px solid  #f70000fc;
    background-color:rgb(0, 255, 255);
    border-radius:40px;
    padding: 20px;
 text-align: left;
 padding-bottom:12px;
-box-shadow : 0px 0px 10px #ff0000;
+box-shadow : 0px 0px 10px #bbfa00;
 
 }
 
   .container .Nnams{
 text-align: center;
-    color:#10c793b5;
+    color:#1100ffb5;
 font-size: 35px;
 
    }
 
   .container .Mname{
-    color: rgb(186, 12, 17);
+    color: rgb(250, 0, 8);
     font-size: 20px;
    }
 
   .container .Wlsit{
     font-size: 15px;
-    color:#0209dbb6
+    color:#000000b6
    }
 
  .container img{
     width: 170px;
     height: 170px;
         border-radius: 50%;
-        border: 3px solid #0011ffb6;
+        border: 3px solid #eae5ebb6;
     }
+   
     /* ---------------------------------------------------------------------------- */
 /* هون خصائص ال reaserch */
     .Research-container {
         width: 800px;
         margin-left: auto;  
         margin-right: auto;
-        border: 3px solid  #0005a1b6;
+        border: 3px solid  #ff0000b6;
         background-color:rgb(0, 253, 253);
         border-radius:40px;
         padding: 20px;  
-        box-shadow : 0px 0px 10px #ff0000;
+        box-shadow : 0px 0px 10px #ccff00;
 
 
     }
     .Research-container .Nnames{
-        color :#10c793b5;
+        color :#bb01f4b5;
         font-size:35px;
         text-align:center;
     }
     .Research-container .Wlist{
-        color:rgb(68, 7, 237);
+        color:rgb(21, 21, 22);
     }
     .Research-container .Cna{
         color :rgb(186, 12, 17);
@@ -127,7 +141,7 @@ font-size: 35px;
         font-size:20px;
     }
     .Research-container .Wlis{
-        color :#0209dbb6;
+        color :#161718b6;
         font-size:15px;
     }
     /* ------------------------------------------------------------ */
@@ -136,24 +150,32 @@ font-size: 35px;
         width: 800px;
         margin-left: auto;  
         margin-right: auto;
-        border: 3px solid  #000aceb6;
+        border: 3px solid  #f40202b6;
         background-color:rgb(0, 255, 255);
         border-radius:40px;
-        padding: 20px;  box-shadow : 0px 0px 10px #ff0000;
+        padding: 20px;  box-shadow : 0px 0px 10px #48ff00;
 
     }
+    .Education-container table tr {
+    transition: background-color 0.2s ease;
+}
+
+.Education-container table tr:hover {
+    background-color: rgba(246, 245, 248, 0.15); /* لون إضاءة خفيف للصف */
+}
+
     .Education-container .Nnames{
-        color:aquamarine;
+        color:rgb(201, 74, 255);
         font-size:35px;
         text-align:center;
     }
     .Education-container .row1t{
         color :rgb(255, 0, 0);
         font-size:20px;
-        background-color:rgb(63, 5, 128);
+        background-color:rgb(126, 126, 126);
     }
     .Education-container .row2t{
-        color :rgb(0, 255, 17);
+        color :rgb(4, 203, 144);
         font-size:20px;
         background-color:rgb(109, 108, 111);
     }
@@ -175,11 +197,11 @@ font-size: 35px;
         background-color: rgb(0, 255, 255);
         border-radius: 40px;
         padding: 20px;
-        box-shadow : 0px 0px 10px #ff0000;
+        box-shadow : 0px 0px 10px #84ff00;
 
     }
     .P-container .Nnames {
-        color: #10c793b5;
+        color: #4503b6a6;
         font-size: 35px;
         text-align: center;
     }
@@ -201,16 +223,16 @@ font-size: 35px;
         background-color: rgb(0, 255, 255);
         border-radius: 40px;
         padding: 20px;
-        box-shadow : 0px 0px 10px #ff0000;
+        box-shadow : 0px 0px 10px #0dff00;
 
     }
     .Te-container h2 {
-        color: #10c793b5;
+        color: #5610c7b5;
         font-size: 35px;
         text-align: center;
     }
     .Te-container ul {
-        color: #db0202b6;
+        color: red;
         font-size: 25px;
     }
     /* ------------------------------------------------------------------------ */
@@ -219,15 +241,15 @@ font-size: 35px;
         width: 800px;
         margin-left: auto;
         margin-right: auto;
-        border: 3px solid #000000b6;
+        border: 3px solid #ff0000b6;
         background-color: rgb(0, 255, 255);
         border-radius: 40px;
         padding: 20px;
-        box-shadow : 0px 0px 10px #ff0000;
+        box-shadow : 0px 0px 10px #2fff00;
 
     }
     .COcontainer .Nnames{
-        color: #10c793b5;
+        color: #be06e8b5;
         font-size: 35px;
         text-align: center;
     }
@@ -252,6 +274,7 @@ font-size: 35px;
         border: none;
         border-radius: 15px;
         cursor: pointer;
+        
     }
     .COcontainer input[type="reset"] {
         background-color: #ff0000;
@@ -261,6 +284,22 @@ font-size: 35px;
         border-radius: 4px;
         cursor: pointer;
     }
+.COcontainer input[type="submit"], 
+.COcontainer input[type="reset"] 
+{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.COcontainer input[type="submit"]:hover 
+{
+    transform: scale(1.01);
+    box-shadow: 0px 5px 15px rgba(0, 255, 8, 0.5);
+}
+
+.COcontainer input[type="reset"]:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
+}
     /* ------------------------------------ ---------------------------*/
     /* الاسم مع رقمي الجامعة  */
     .Namenumbers {
@@ -286,7 +325,7 @@ margin :0;
   
 
 @media screen and (max-width: 768px) {
-    /* 1. ضبط عرض جميع الصناديق لتناسب الشاشة */
+    /* ضبط عرض وحجم جميع الصناديق الرئيسية على الموبايل */
     .container, 
     .Research-container, 
     .Education-container, 
@@ -297,33 +336,38 @@ margin :0;
         width: 90% !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        padding: 12px !important;
         box-sizing: border-box !important;
     }
 
-    /* 2. حل مشكلة مربع النص (textarea) لئلا يخرج عن الصندوق */
-    .COcontainer input[type="text"], 
+/*عشان مربعات الي تحت تاعون ارسال رسالة وحذف رسالة 
+*/    
+.COcontainer input[type="text"], 
     .COcontainer textarea {
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
 
-    /* 3. حل مشكلة الجدول وإجباره على البقاء داخل الصندوق */
+/* عشان اخلي الجدول يلائم اي صفحة بدون م يطلع لبرا */
     .Education-container table {
         width: 100% !important;
         table-layout: fixed !important;
+        box-sizing: border-box !important;
     }
 
     .Education-container th, 
-    .Education-container td {
-        padding: 4px !important;
-        word-break: break-word !important;
+    .Education-container td 
+    {
+          padding: 5px !important;
+     word-break: break-word !important;
         word-wrap: break-word !important;
     }
 
-    /* 4. منع خروج جميع النصوص العامة */
-    p, span, h1, h2, h3, h4, li {
-        max-width: 100% !important;
+    /* منع خروج النصوص العامة وكسر الكلمات الطويلة */
+    p, span, h1, h2, h3, h4, li, a {
+         max-width: 100% !important;
         word-wrap: break-word !important;
+     overflow-wrap: break-word !important;
     }
 }
